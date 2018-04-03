@@ -23,7 +23,7 @@ To use these functions is necessary to download MATLAB
 
 The problem that you want to solve this software is given n linear functions to pieces find a 2 * epsilon amplitude tube so that at each instant it contains p functions (although it does not have to always be the same functions).
 
-* Decision_Problem: returns 1 if it is possible to build the tube or 0 if not.
+* Decision_Problem3: returns 1 if it is possible to build the tube or 0 if not.
 	Input values: 
 	* F are n piecewise functions, F is a cell of n matrix where each matrix has by rows each segment of the piecewise function 
   ( [a b c d; c d e f ..], a,b,c,d,e,f in R) 
