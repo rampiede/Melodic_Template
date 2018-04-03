@@ -9,7 +9,7 @@ function [epsilon,F_aprox] = Binary_search_epsilon(F,p )
         i = ceil(n/2);
         epsilon = epsilon_cand(i);
         hold off
-        if Decision_Problem(F_aprox, epsilon, p)
+        if Decision_Problem3(F_aprox, epsilon, p)
             epsilon_cand(i+1:n) = [];
         else
             epsilon_cand(1:i) = [];
