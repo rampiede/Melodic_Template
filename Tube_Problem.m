@@ -1,7 +1,7 @@
 function  Tube_Problem(F, epsilon, p)
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here    
-    [ Answer,FPlusMinusEpsilonLabel,~,~,Events, boolean ] = Decision_Problem(F, epsilon, p);
+    [ Answer,FPlusMinusEpsilonLabel,~,~,Events, boolean ] = Decision_Problem3(F, epsilon, p);
     if Answer
         m1 = length(F);
         %p = ceil(p/m); si queremos que p sea porcentaje
@@ -14,7 +14,7 @@ function  Tube_Problem(F, epsilon, p)
             Matrix = [Matrix; FPlusMinusEpsilonLabel{1,i}];
         end
         L = Matrix(:,4);
-        M = max([max(Matrix(:,2)),max(L)]) + 1; %NÚMERO SUFICIENTEMENTE GRANDE
+        M = max([max(Matrix(:,2)),max(L)]) + 1; %NÃšMERO SUFICIENTEMENTE GRANDE
         Y = cell(m, l2);%donde estan las intersecciones en cada intervalo al que se puede llegar en continuo
         c = distinguishable_colors(m1+1);%colors
         e1 = [];
